@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  padding: 20px 20px 60px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+@layer components {
+  .button {
+    @apply p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none;
+  }
+}
