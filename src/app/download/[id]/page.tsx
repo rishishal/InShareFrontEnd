@@ -11,7 +11,9 @@ const page: NextPage<{ file: IFile }> = async ({
 }: {
   params: { id: string };
 }) => {
-  const res = await fetch(`https://charming-tux-ant.cyclic.app/${params.id}`);
+  const res = await fetch(
+    `https://charming-tux-ant.cyclic.app/api/files/${params.id}`
+  );
   const data = await res.json();
 
   const handleDownload = async () => {
