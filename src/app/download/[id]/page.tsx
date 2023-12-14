@@ -16,7 +16,7 @@ const page: NextPage<{ file: IFile }> = async ({
 
   const handleDownload = async () => {
     const { data } = await axios.get(
-      `https://charming-tux-ant.cyclic.app/${params.id}/download`,
+      `https://charming-tux-ant.cyclic.app/api/files/${params.id}/download`,
       {
         responseType: "blob",
       }
